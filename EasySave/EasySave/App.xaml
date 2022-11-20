@@ -1,0 +1,33 @@
+﻿<Application x:Class="EasySave.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EasySave">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="Ressources/Colors.xaml"/>
+               
+                <ResourceDictionary Source="Theme/SubTitle.xaml"/>
+                <ResourceDictionary Source="Theme/TextBox.xaml"/>
+
+                <ResourceDictionary Source="Theme/GeneralListView.xaml"/>
+                <ResourceDictionary Source="Theme/SaveList.xaml"/>
+                <ResourceDictionary Source="Theme/ExtentionList.xaml"/>
+
+                <!--Buttons-->
+                <ResourceDictionary Source="Theme/SettingsButton.xaml"/>
+                <ResourceDictionary Source="Theme/MenuButton.xaml"/>
+                <ResourceDictionary Source="Theme/ExecButton.xaml"/>
+                <ResourceDictionary Source="Theme/CrossButton.xaml"/>
+                <ResourceDictionary Source="Theme/DelButton.xaml"/>
+                <ResourceDictionary Source="Theme/SecondaryButton.xaml"/>
+                
+                <!--Lang-->
+                <ResourceDictionary Source="Lang/Francais (fr-FR).xaml"/>
+                <ResourceDictionary Source="Lang/English (en-US).xaml"/>
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

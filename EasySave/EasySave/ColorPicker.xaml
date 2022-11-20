@@ -1,0 +1,151 @@
+﻿<Window x:Class="EasySave.ColorPicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySave"
+        mc:Ignorable="d"
+        Title="ColorPicker" Height="400" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button x:Name="b000000"
+                Background="#000000"
+                Click="Return_Click"
+                Grid.Row="0"
+                Grid.Column="0" />
+        <Button x:Name="bffffff"
+                Background="#ffffff"
+                Click="Return_Click"
+                Grid.Row="0"
+                Grid.Column="1" />
+        <Button x:Name="B201e2e"
+                Background="#201e2e"
+                Click="Return_Click"
+                Grid.Row="0"
+                Grid.Column="2" />
+        <Button x:Name="b191724"
+                Background="#191724"
+                Click="Return_Click"
+                Grid.Row="0"
+                Grid.Column="3" />
+        <Button x:Name="b292D45"
+                Background="#292D45"
+                Click="Return_Click"
+                Grid.Row="0"
+                Grid.Column="4" />
+        <Button x:Name="b232D3B"
+                Background="#232D3B"
+                Click="Return_Click"
+                Grid.Row="1"
+                Grid.Column="0" />
+        <Button x:Name="b2C4652"
+                Background="#2C4652"
+                Click="Return_Click"
+                Grid.Row="1"
+                Grid.Column="1" />
+        <Button x:Name="b274647"
+                Background="#274647"
+                Click="Return_Click"
+                Grid.Row="1"
+                Grid.Column="2" />
+        <Button x:Name="b425F87"
+                Background="#425F87"
+                Click="Return_Click"
+                Grid.Row="1"
+                Grid.Column="3" />
+        <Button x:Name="b5D6F87"
+                Background="#5D6F87"
+                Click="Return_Click"
+                Grid.Row="1"
+                Grid.Column="4" />
+        <Button x:Name="b876E5D"
+                Background="#876E5D"
+                Click="Return_Click"
+                Grid.Row="2"
+                Grid.Column="0" />
+        <Button x:Name="b20393B"
+                Background="#20393B"
+                Click="Return_Click"
+                Grid.Row="2"
+                Grid.Column="1" />
+        <Button x:Name="b3B2834"
+                Background="#3B2834"
+                Click="Return_Click"
+                Grid.Row="2"
+                Grid.Column="2" />
+        <Button x:Name="b1D293B"
+                Background="#1D293B"
+                Click="Return_Click"
+                Grid.Row="2"
+                Grid.Column="3" />
+        <Button x:Name="b3C366E"
+                Background="#3C366E"
+                Click="Return_Click"
+                Grid.Row="2"
+                Grid.Column="4" />
+        <Button x:Name="b47423C"
+                Background="#47423C"
+                Click="Return_Click"
+                Grid.Row="3"
+                Grid.Column="0" />
+        <Button x:Name="b7597C7"
+                Background="#7597C7"
+                Click="Return_Click"
+                Grid.Row="3"
+                Grid.Column="1" />
+        <Button x:Name="b506787"
+                Background="#506787"
+                Click="Return_Click"
+                Grid.Row="3"
+                Grid.Column="2" />
+        <Button x:Name="b1E2733"
+                Background="#1E2733"
+                Click="Return_Click"
+                Grid.Row="3"
+                Grid.Column="3" />
+        <Button x:Name="b2F5E53"
+                Background="#2F5E53"
+                Click="Return_Click"
+                Grid.Row="3"
+                Grid.Column="4" />
+        <Button x:Name="b2A543E"
+                Background="#2A543E"
+                Click="Return_Click"
+                Grid.Row="4"
+                Grid.Column="0" />
+        <Button x:Name="b1C3233"
+                Background="#201e2e"
+                Click="Return_Click"
+                Grid.Row="4"
+                Grid.Column="1" />
+        <Button x:Name="b2E5354"
+                Background="#201e2e"
+                Click="Return_Click"
+                Grid.Row="4"
+                Grid.Column="2" />
+        <Button x:Name="bBFB6AE"
+                Background="#BFB6AE"
+                Click="Return_Click"
+                Grid.Row="4"
+                Grid.Column="3" />
+        <Button x:Name="bF29D52"
+                Background="#F29D52"
+                Click="Return_Click"
+                Grid.Row="4"
+                Grid.Column="4" />
+
+    </Grid>
+</Window>

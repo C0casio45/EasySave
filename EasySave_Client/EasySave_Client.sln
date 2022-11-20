@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasySave_Client", "EasySave_Client\EasySave_Client.csproj", "{60BC0191-2D39-4271-BE33-6FA139CA5E4E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Prosoft_EasySaveClient", "Prosoft_EasySaveClient\Prosoft_EasySaveClient.vdproj", "{435B07B4-66C7-47D0-A8E8-BCA79ED8F769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60BC0191-2D39-4271-BE33-6FA139CA5E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BC0191-2D39-4271-BE33-6FA139CA5E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BC0191-2D39-4271-BE33-6FA139CA5E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BC0191-2D39-4271-BE33-6FA139CA5E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435B07B4-66C7-47D0-A8E8-BCA79ED8F769}.Debug|Any CPU.ActiveCfg = Debug
+		{435B07B4-66C7-47D0-A8E8-BCA79ED8F769}.Release|Any CPU.ActiveCfg = Release
+		{435B07B4-66C7-47D0-A8E8-BCA79ED8F769}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45BDB03F-6364-48E3-A9D2-9838CAC83A11}
+	EndGlobalSection
+EndGlobal

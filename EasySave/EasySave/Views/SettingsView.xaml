@@ -1,0 +1,229 @@
+﻿<UserControl x:Class="EasySave.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:EasySave.Views" xmlns:viewmodels="clr-namespace:EasySave.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:SettingsViewModel}"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="600">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="300" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Text="{DynamicResource Settings}"
+                   Style="{StaticResource SubTitleTheme}" />
+        <!--Start Customization Area-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="180" />
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <!--Start Language Cusomization-->
+            <TextBlock Grid.Column="0"
+                       Text="{DynamicResource Language}"
+                       Foreground="{DynamicResource FontColor}"
+                       Margin="10"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
+            <ComboBox Grid.Column="1"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center"
+                      Width="120"
+                      IsEditable="true" IsReadOnly="True"
+                      Text="{DynamicResource LanguageSelected}"
+                      ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedItem}">
+            </ComboBox>
+            <!--End Language Cusomization-->
+            <!--Start PrimaryColor Cusomization-->
+            <TextBlock Grid.Column="0"
+                       Grid.Row="1"
+                       Text="{DynamicResource Primary}"
+                       Foreground="{DynamicResource FontColor}"
+                       Margin="10"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
+            <Button Height="20" Width="20"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    HorizontalAlignment="Left"
+                    Background="{DynamicResource PrimaryColor}" 
+                    Command="{Binding PrimaryColorCommand}"/>
+            <!--End PrimaryColor Cusomization-->
+            <!--Start SecondaryColor Cusomization-->
+            <TextBlock Grid.Column="0"
+                       Grid.Row="2"
+                       Text="{DynamicResource Secondary}"
+                       Foreground="{DynamicResource FontColor}"
+                       Margin="10"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
+            <Button Height="20" Width="20"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    HorizontalAlignment="Left"
+                    Background="{DynamicResource SecondaryColor}" 
+                    Command="{Binding SecondaryColorCommand}" />
+            <!--End SecondaryColor Cusomization-->
+            <!--Start FontColor Cusomization-->
+            <TextBlock Grid.Column="0"
+                       Grid.Row="3"
+                       Text="{DynamicResource Font}"
+                       Foreground="{DynamicResource FontColor}"
+                       Margin="10"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
+            <Button Height="20" Width="20"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    HorizontalAlignment="Left"
+                    Background="{DynamicResource FontColor}" 
+                    Command="{Binding FontColorCommand}" />
+            <!--End FontColor Cusomization-->
+            <!--Start BisinessSoftware Cusomization-->
+            <TextBlock x:Name="BusinessSoftware_Label"
+                       Grid.Column="0"
+                       Grid.Row="4"
+                       Text="{DynamicResource BusinessSoftware}"
+                       Foreground="#fff"
+                       Margin="10"
+                       FontSize="15"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left" />
+            
+            <Grid Grid.Column="1"
+                  VerticalAlignment="Top"
+                  Grid.Row="4"
+                  Margin="0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0"
+                         Grid.Row="0"
+                         Padding="2.5"
+                         Foreground="{DynamicResource FontColor}"
+                         BorderBrush="{DynamicResource FontColor}"
+                         Background="{DynamicResource PrimaryColor}"
+                         VerticalAlignment="Center" HorizontalAlignment="Stretch"
+                         Text="{Binding BusinessSoftware, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button x:Name="BusinessSoftware"
+                        Content="{DynamicResource Update}"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Style="{StaticResource SettBtnTheme}"
+                        Command="{Binding AddBusinessSoftwareCommand}"/>
+            </Grid>
+            <!--End BisinessSoftware Cusomization-->
+            <!--Start EncryptExtention Cusomization-->
+            <TextBlock x:Name="Encrypt_Label"
+                       Grid.Column="0"
+                       Grid.Row="5"
+                       Text="{DynamicResource Encrypt}"
+                       Foreground="{DynamicResource FontColor}"
+                       Margin="10"
+                       FontSize="15"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left" />
+            <Grid Grid.Column="1"
+                  VerticalAlignment="Top"
+                  Grid.Row="5"
+                  Margin="0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0"
+                         Grid.Row="0"
+                         Padding="2.5"
+                         VerticalAlignment="Center" HorizontalAlignment="Stretch"
+                         Foreground="{DynamicResource FontColor}"
+                         BorderBrush="{DynamicResource FontColor}"
+                         Background="{DynamicResource PrimaryColor}"
+                         Text="{Binding ExtensionName, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button x:Name="Encrypt"
+                        Content="{DynamicResource AddEncrypt}"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Style="{StaticResource SettBtnTheme}"
+                        Command="{Binding AddExtensionCommand}"/>
+            </Grid>
+            <!--End EncryptExtention Cusomization-->
+
+            <TextBlock Grid.Column="2"
+                       Text="{DynamicResource LogType}"
+                       Foreground="{DynamicResource FontColor}"
+                       Margin="10"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
+
+            <RadioButton Content="json"
+                     Foreground="{DynamicResource FontColor}"
+                     Command="{Binding SetLoggingTypeCommand}"
+                     CommandParameter="JSON"
+                     IsChecked="{Binding LogTypeIsJson}"
+                     Grid.Row="0"
+                     Grid.Column="3"/>
+            <RadioButton Content="xml"
+                     Foreground="{DynamicResource FontColor}"
+                     Command="{Binding SetLoggingTypeCommand}"
+                     CommandParameter="XML"
+                     IsChecked="{Binding LogTypeIsXml}"
+                     Grid.Column="3"
+                     Grid.Row="0"
+                     Margin="0 25 0 0"/>
+        </Grid>
+        <!--Start Encrypt List-->
+        <ListView
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="150 0 0 0"
+            ItemsSource="{Binding Extensions}"
+            Style="{StaticResource ExtMainTheme}"
+            ItemContainerStyle="{StaticResource BackTemplate}">
+            <ListView.View>
+                <!--Start Encrypt Item Template-->
+                <GridView ColumnHeaderContainerStyle="{StaticResource HeaderListTheme}">
+                    <GridViewColumn>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button  Style="{StaticResource CrossBtnTheme}"
+                                         Command="{Binding DeleteExtensionCommand}">
+                                </Button>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                    <GridViewColumn Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}" FontSize="11" Foreground="{DynamicResource FontColor}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    
+                </GridView>
+                <!--End Encrypt Item Template-->
+            </ListView.View>
+        </ListView>
+        <!--End Encrypt List-->
+    </Grid>
+</UserControl>

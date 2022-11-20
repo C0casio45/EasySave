@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="EasySave_Client.Views.WorkSaveView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasySave_Client.Views" 
+             xmlns:viewmodels="clr-namespace:EasySave_Client.ViewModels" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Worksaves"
+                   Style="{StaticResource SubTitleTheme}"
+                   Grid.Row="0"
+                   Margin="20 0 0 0"
+                   />
+
+        <Rectangle Grid.Row="1" Fill="Black" Height="0" x:Name="pattern" Margin="10,0,10,0"/>
+
+        <ListView Grid.Row="1" 
+                  ItemsSource="{Binding WorkSaves}"
+                  ItemContainerStyle="{StaticResource BackTemplate}"
+                  Style="{StaticResource SaveMainTheme}" 
+                  Margin="0 25 0 10">
+
+            <ListView.View>
+            <GridView ColumnHeaderContainerStyle="{StaticResource HeaderListTheme}">
+                    <GridViewColumn Width="{Binding ActualWidth, ElementName=pattern}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--Start Item Template-->
+                                <Grid Margin="0 10 0 0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <GroupBox Background="{DynamicResource PrimaryColor}"
+                                              Padding="10"
+                                              BorderThickness="0"
+                                              Grid.Row="0">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="100"/>
+                                            </Grid.ColumnDefinitions>
+                                            <!--Save Name-->
+                                            <TextBlock Text="{Binding Name}" Style="{StaticResource SaveTitleTheme}"/>
+                                            <!--Save SourcePath Title-->
+                                            <TextBlock Text="SourcePath" Style="{StaticResource SaveOptionTheme}" Grid.Row="1" Grid.Column="0"/>
+                                            <!--Save SourcePath-->
+                                            <TextBlock Text="{Binding SourcePath}" Style="{StaticResource SaveDataTheme}" Grid.Row="1" Grid.Column="0"/>
+                                            <!--Save TargetPath Title-->
+                                            <TextBlock Text="TargetPath"  Style="{StaticResource SaveOptionTheme}" Grid.Row="2" Grid.Column="0"/>
+                                            <!--Save TargetPath-->
+                                            <TextBlock Text="{Binding TargetPath}" Style="{StaticResource SaveDataTheme}" Grid.Row="2" Grid.Column="0" />
+                                            <!--Save Type-->
+                                            <TextBlock Text="Type : "  Style="{StaticResource SaveOptionTheme}" Grid.Row="3" Grid.Column="0"/>
+
+                                            <TextBlock Text="{Binding Type}" Style="{StaticResource SaveDataTheme}" Grid.Row="3" Grid.Column="0"/>
+
+
+                                            <!--play Start-->
+                                            <Button Margin="10 0 0 0" Command="{Binding StartWorkSaveCommand}" CommandParameter="single" Content="Start" Grid.Row="0" Grid.Column="0" Style="{StaticResource ExecBtnTheme}"/>
+
+                                            <!--pause Start-->
+                                            <Button Margin="10 0 0 0" Command="{Binding PauseWorkSaveCommand}" CommandParameter="single" Content="Pause" Grid.Row="0" Grid.Column="1" Style="{StaticResource SecBtnTheme}" Background="{DynamicResource FontColor}" Foreground="{DynamicResource SecondaryColor}"/>
+
+                                            <!--stop Delete-->
+                                            <Button Margin="10 0 0 0" Command="{Binding StopWorkSaveCommand}" Content="Stop" Grid.Row="0" Grid.Column="2" Style="{StaticResource DeleteBtnTheme}"/>
+                                        </Grid>
+                                    </GroupBox>
+
+                                    <ProgressBar Grid.Row="1" Value="{Binding ProgressionPercentage}" Margin="0" Background="Transparent"/>
+
+                                </Grid>
+                                <!--End Item Template-->
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

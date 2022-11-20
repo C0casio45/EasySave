@@ -1,0 +1,24 @@
+﻿<Window x:Class="EasySave_Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySave_Client" 
+        xmlns:views="clr-namespace:EasySave_Client.Views"
+        xmlns:vms="clr-namespace:EasySave_Client.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Background="{DynamicResource SecondaryColor}"
+        Closing="Window_Closing"
+        >
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate DataType="{x:Type vms:WorkSaveListViewModel}">
+                <views:WorkSaveView/>
+            </DataTemplate>
+        </Grid.Resources>
+        <views:WorkSaveView/>
+    </Grid>
+
+    
+</Window>

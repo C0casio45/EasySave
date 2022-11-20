@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="LanguageSelected">English (en-US)</system:String>
+
+    <!--MainMenuView.xaml-->
+    <system:String x:Key="Settings">Settings</system:String>
+    <system:String x:Key="Worksaves">Worksaves</system:String>
+
+    <!--SettingsView.xaml-->
+    <system:String x:Key="Language">Set Language :</system:String>
+    <system:String x:Key="Primary">Set Primary :</system:String>
+    <system:String x:Key="Secondary">Set Secondary :</system:String>
+    <system:String x:Key="Font">Set Font Color :</system:String>
+    <system:String x:Key="Encrypt">Set Encrypted Files :</system:String>
+    <system:String x:Key="AddEncrypt">Add</system:String>
+    <system:String x:Key="Extension">Extension</system:String>
+    <system:String x:Key="BusinessSoftware">Business Software :</system:String>
+    <system:String x:Key="LogType">Type of log files :</system:String>
+    
+    <!--WorkSaveListingView.xaml-->
+    <system:String x:Key="AddWorksave">Add WorkSave</system:String>
+    <system:String x:Key="ExWorksave">Exec All WorkSaves</system:String>
+    <system:String x:Key="Name">Name</system:String>
+    <system:String x:Key="SourcePath">Source Path</system:String>
+    <system:String x:Key="TargetPath">Target Path</system:String>
+    <system:String x:Key="Type">Type</system:String>
+    <system:String x:Key="Start">Start</system:String>
+
+    <!--CreateWorkSaveView.xaml-->
+    <system:String x:Key="Reservation">Create Worksave</system:String>
+    <system:String x:Key="WName">WorkSave name</system:String>
+    <system:String x:Key="File">File Path</system:String>
+    <system:String x:Key="Target">Target Path</system:String>
+    <system:String x:Key="Discriminating">Is Discriminating ?</system:String>
+    <system:String x:Key="Submit">Submit</system:String>
+    <system:String x:Key="Cancel">Cancel</system:String>
+
+    <!--Multi file text-->
+    <system:String x:Key="Delete">Delete</system:String>
+    <system:String x:Key="Update">Update</system:String>
+
+</ResourceDictionary>

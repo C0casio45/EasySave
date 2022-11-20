@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasySave", "EasySave\EasySave.csproj", "{AB19AFEB-1DBB-468D-AB77-C178030B303A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasySave_XUnit", "EasySave_XUnit\EasySave_XUnit.csproj", "{F73130E8-932B-41D3-AAD5-40FB4397DF3F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Prosoft EasySave", "Prosoft EasySave\Prosoft EasySave.vdproj", "{67732547-F716-46F4-8B89-C32DF1D86C1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB19AFEB-1DBB-468D-AB77-C178030B303A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB19AFEB-1DBB-468D-AB77-C178030B303A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB19AFEB-1DBB-468D-AB77-C178030B303A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB19AFEB-1DBB-468D-AB77-C178030B303A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F73130E8-932B-41D3-AAD5-40FB4397DF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73130E8-932B-41D3-AAD5-40FB4397DF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73130E8-932B-41D3-AAD5-40FB4397DF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67732547-F716-46F4-8B89-C32DF1D86C1C}.Debug|Any CPU.ActiveCfg = Debug
+		{67732547-F716-46F4-8B89-C32DF1D86C1C}.Release|Any CPU.ActiveCfg = Release
+		{67732547-F716-46F4-8B89-C32DF1D86C1C}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50D1BD43-FD5B-41C4-9D54-1346555C6D54}
+	EndGlobalSection
+EndGlobal
